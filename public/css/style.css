@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #2b2b2b;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #1B1B1B;
+}
+
+.logo{
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo h4{
+    font-weight: normal;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.nav-links li a:hover{
+    color: cyan;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+section{
+    background: url() no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Intro */
+.introducao h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 38px;
+    color: #FFF;
+    margin: auto;
+}
+
+/* About */
+.about{
+    background: #E6E6E6;
+}
+
+.about h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.about-items{
+    margin: 20px;
+}
+
+.about-item img{
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.about-item{
+    border: 1px solid #2b2b2b;
+    background: #F1F1F1;
+    text-align: center;
+    width: 300px;
+    min-height: 280px;
+    padding: 30px;
+}
+
+.about-item:hover{
+    background: #FFF;
+}
+
+.about-item h1{
+    font-size: 19px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.about-item p{
+    font-size: 16px;
+}
+
+.sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.introducao .down{
+    color: #CCC;
+    font-size: 30px;
+}
+
+.introducao .down:hover{
+    color: #FFF;
+}
