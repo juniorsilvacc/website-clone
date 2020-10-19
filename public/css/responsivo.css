@@ -13,7 +13,7 @@
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #2B2B2B;
+        background-color: #1B1B1B;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,13 +28,16 @@
         transition: .5s;
     }
     .nav-links li a:hover{
-        padding-left: 30px;
+        padding-left: 1.87rem;
     }
     .burger{
         display: block;
     }
     .nav-active{
     transform: translateX(0%);
+    }
+    .about-item{
+        margin-top: 20px;
     }
 }
 
